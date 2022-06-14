@@ -9,5 +9,26 @@
 <body>
     <h1 style="color: blue;">Latihan GIT Camp404</h1>
     <p>Selamat datang</p>
+    <p>Klik tombol untuk mendaftar</p>
+    <button onclick="cekProgram()">Daftar</button>
+    <div id="program" style="visibility:hidden;">
+        <table border="1">
+            <tr style="background-color: rgb(69, 69, 212) ;">
+                <th>program</th>
+                <th>Waktu</th>
+                <th>Daftar program</th>
+            </tr>
+            <tr>
+                <td>GIT Personal projek</td>
+                <td>14 Juni 2022</td>
+                <td><button>Daftar</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function cekProgram(){
+            document.getElementById("program").style.visibility="visible"
+        }
+    </script>
 </body>
 </html>
